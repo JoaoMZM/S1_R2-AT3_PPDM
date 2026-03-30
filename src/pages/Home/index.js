@@ -13,8 +13,8 @@ export default function Home() {
 
       <Image source={require('../../../assets/logo.png')} style={{ width: '95%', height: '30%' }}></Image>
 
-      <View style={{padding: 16, backgroundColor: '#ff0033', borderRadius: 12}}>
-        <Text style={{ fontSize: 18, color: '#000000' }}>
+      <View style={{padding: 16, backgroundColor: '#2b2b2b', borderRadius: 12}}>
+        <Text style={{ fontSize: 18, color: '#ccc' }}>
           A Mazierojogos é uma marca focada no universo gamer, unindo inovação tecnológica e paixão pelo entretenimento digital. Com uma identidade visual vibrante e moderna, a empresa busca oferecer uma experiência imersiva e de alta performance para jogadores que valorizam qualidade e estilo na cultura dos eSports.
         </Text>
       </View>

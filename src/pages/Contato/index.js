@@ -5,35 +5,40 @@ import { AntDesign } from '@expo/vector-icons';
 export default function Contato() {
   return (
     <SafeAreaView style={styles.container}>
-      
+
       <Text style={styles.titulo}>Contato</Text>
 
       <View style={styles.card}>
         <Text style={styles.nomeLoja}>Maziero Jogos</Text>
 
-        <View style={styles.linha}>
+        <View style={styles.textoInfo}>
           <AntDesign name="environment" size={18} color="#ccc" />
-          <Text style={styles.info}> Campinas - SP</Text>
+          <Text style={styles.texto}> Campinas - SP</Text>
         </View>
 
-        <View style={styles.linha}>
+        <View style={styles.textoInfo}>
           <AntDesign name="clock-circle" size={18} color="#ccc" />
-          <Text style={styles.info}> Seg - Sex: 9h às 18h</Text>
+          <Text style={styles.texto}> Seg - Sex: 6h às 19h</Text>
         </View>
 
-        <View style={styles.linha}>
+        <View style={styles.textoInfo}>
           <AntDesign name="phone" size={18} color="#ccc" />
-          <Text style={styles.info}> (11) 99999-9999</Text>
+          <Text style={styles.texto}> (67) 66666-6666</Text>
         </View>
 
-        <View style={styles.linha}>
+        <View style={styles.textoInfo}>
           <AntDesign name="whats-app" size={18} color="#ccc" />
-          <Text style={styles.info}> WhatsApp: (11) 99999-9999</Text>
+          <Text style={styles.texto}> WhatsApp: (67) 77777-7777</Text>
         </View>
 
-        <View style={styles.linha}>
+        <View style={styles.textoInfo}>
           <AntDesign name="mail" size={18} color="#ccc" />
-          <Text style={styles.info}> contato@loja.com</Text>
+          <Text style={styles.texto}> mazierojogos@gmail.com</Text>
+        </View>
+
+        <View style={styles.textoInfo}>
+          <AntDesign name="idcard" size={18} color="#ccc" />
+          <Text style={styles.texto}> CNPJ: 12.345.678/0001-95</Text>
         </View>
       </View>
 
@@ -71,13 +76,13 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
 
-  linha: {
+  textoInfo: {
     flexDirection: 'row',
     alignItems: 'center'
   },
 
-  info: {
+  texto: {
     color: '#ccc',
-    fontSize: 14
+    fontSize: 18
   }
 });

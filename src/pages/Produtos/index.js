@@ -1,8 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, ScrollView, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Contato() {
+
+  const mensagem = () => {
+    Alert.alert('Sucesso', 'Produto adicionado ao carrinho');
+  };
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={{ gap: 12, paddingBottom: 20 }}>
@@ -12,10 +16,10 @@ export default function Contato() {
             style={styles.image}
           />
 
-          <View style={styles.info}>
+          <View style={styles.infoProduto}>
             <Text style={styles.titulo}>Teclado Mecânico Branco</Text>
             <Text style={styles.preco}>R$300,00</Text>
-            <Text style={styles.pix}>Valor PIX: R$280,00</Text>
+            <Text style={styles.preco}>Valor PIX: R$280,00</Text>
 
             <TextInput
               placeholder='Quantidade desejada'
@@ -24,8 +28,8 @@ export default function Contato() {
               style={styles.input}
             />
 
-            <TouchableOpacity style={styles.botao}>
-              <Text style={styles.botaoTexto}>Comprar</Text>
+            <TouchableOpacity style={styles.botao} onPress={mensagem}>
+              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -35,10 +39,10 @@ export default function Contato() {
             style={styles.image}
           />
 
-          <View style={styles.info}>
+          <View style={styles.infoProduto}>
             <Text style={styles.titulo}>Teclado Membrana Preto</Text>
             <Text style={styles.preco}>R$220,00</Text>
-            <Text style={styles.pix}>Valor PIX: R$200,00</Text>
+            <Text style={styles.preco}>Valor PIX: R$200,00</Text>
 
             <TextInput
               placeholder='Quantidade desejada'
@@ -47,8 +51,8 @@ export default function Contato() {
               style={styles.input}
             />
 
-            <TouchableOpacity style={styles.botao}>
-              <Text style={styles.botaoTexto}>Comprar</Text>
+            <TouchableOpacity style={styles.botao} onPress={mensagem}>
+              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -58,10 +62,10 @@ export default function Contato() {
             style={styles.image}
           />
 
-          <View style={styles.info}>
+          <View style={styles.infoProduto}>
             <Text style={styles.titulo}>Mouse</Text>
             <Text style={styles.preco}>R$200,00</Text>
-            <Text style={styles.pix}>Valor PIX: R$180,00</Text>
+            <Text style={styles.preco}>Valor PIX: R$180,00</Text>
 
             <TextInput
               placeholder='Quantidade desejada'
@@ -70,8 +74,8 @@ export default function Contato() {
               style={styles.input}
             />
 
-            <TouchableOpacity style={styles.botao}>
-              <Text style={styles.botaoTexto}>Comprar</Text>
+            <TouchableOpacity style={styles.botao} onPress={mensagem}>
+              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -81,10 +85,10 @@ export default function Contato() {
             style={styles.image}
           />
 
-          <View style={styles.info}>
+          <View style={styles.infoProduto}>
             <Text style={styles.titulo}>Teclado Magnético Preto</Text>
             <Text style={styles.preco}>R$400,00</Text>
-            <Text style={styles.pix}>Valor PIX: R$360,00</Text>
+            <Text style={styles.preco}>Valor PIX: R$360,00</Text>
 
             <TextInput
               placeholder='Quantidade desejada'
@@ -93,8 +97,8 @@ export default function Contato() {
               style={styles.input}
             />
 
-            <TouchableOpacity style={styles.botao}>
-              <Text style={styles.botaoTexto}>Comprar</Text>
+            <TouchableOpacity style={styles.botao} onPress={mensagem}>
+              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -104,10 +108,10 @@ export default function Contato() {
             style={styles.image}
           />
 
-          <View style={styles.info}>
+          <View style={styles.infoProduto}>
             <Text style={styles.titulo}>Teclado Mecânico Preto</Text>
             <Text style={styles.preco}>R$300,00</Text>
-            <Text style={styles.pix}>Valor PIX: R$280,00</Text>
+            <Text style={styles.preco}>Valor PIX: R$280,00</Text>
 
             <TextInput
               placeholder='Quantidade desejada'
@@ -116,8 +120,8 @@ export default function Contato() {
               style={styles.input}
             />
 
-            <TouchableOpacity style={styles.botao}>
-              <Text style={styles.botaoTexto}>Comprar</Text>
+            <TouchableOpacity style={styles.botao} onPress={mensagem}>
+              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -148,7 +152,7 @@ const styles = StyleSheet.create({
     borderRadius: 12
   },
 
-  info: {
+  infoProduto: {
     flex: 1,
     gap: 6
   },
@@ -157,11 +161,6 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 18,
     fontWeight: 'bold'
-  },
-
-  pix: {
-    color: '#00ff88',
-    fontSize: 14
   },
 
   input: {
