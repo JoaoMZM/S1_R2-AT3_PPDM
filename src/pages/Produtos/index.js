@@ -29,7 +29,7 @@ export default function Contato() {
             />
 
             <TouchableOpacity style={styles.botao} onPress={mensagem}>
-              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
+              <Text style={styles.textoBotao}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -52,7 +52,7 @@ export default function Contato() {
             />
 
             <TouchableOpacity style={styles.botao} onPress={mensagem}>
-              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
+              <Text style={styles.textoBotao}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -75,7 +75,7 @@ export default function Contato() {
             />
 
             <TouchableOpacity style={styles.botao} onPress={mensagem}>
-              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
+              <Text style={styles.textoBotao}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -98,7 +98,7 @@ export default function Contato() {
             />
 
             <TouchableOpacity style={styles.botao} onPress={mensagem}>
-              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
+              <Text style={styles.textoBotao}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -121,7 +121,7 @@ export default function Contato() {
             />
 
             <TouchableOpacity style={styles.botao} onPress={mensagem}>
-              <Text style={styles.botaoTexto}>Adicionar ao carrinho</Text>
+              <Text style={styles.textoBotao}>Adicionar ao carrinho</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
   cardProduto: {
     width: '95%',
     backgroundColor: '#2b2b2b',
-    borderRadius: 16,
+    borderRadius: 12,
     padding: 16,
     flexDirection: 'row',
     alignItems: 'center',
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
 
   input: {
     backgroundColor: '#1f1f1f',
-    borderRadius: 8,
+    borderRadius: 10,
     padding: 8,
     color: '#fff',
     marginTop: 6
@@ -174,12 +174,12 @@ const styles = StyleSheet.create({
   botao: {
     backgroundColor: '#ff0033',
     padding: 10,
-    borderRadius: 8,
+    borderRadius: 10,
     marginTop: 8,
     alignItems: 'center'
   },
 
-  botaoTexto: {
+  textoBotao: {
     color: '#fff',
     fontWeight: 'bold'
   },
